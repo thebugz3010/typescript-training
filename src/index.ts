@@ -10,9 +10,10 @@ app.set("view engine", "ejs");
 
 app.use(express.json());
 app.use(express.urlencoded());
+app.use('/public', express.static(path.join(__dirname, "public")));
 
 routes.register(app);
 
 app.listen(port, function(): any {
-	console.log(`App listening on port ${port}`)
+	console.log(`App listening on port ${port}`);
 })
