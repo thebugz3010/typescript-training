@@ -37,10 +37,12 @@ export const register = ( app: express.Application ) => {
 		res.render("signup", {error: ""});
 	});
 	
-	app.get('/ajax-email', (req, res) => {
-		const emailRegexp: RegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+	app.post('/ajax-email', (req, res) => {
+		const emailRegexp: RegExp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 		if (!emailRegexp.test(req.body.email)) {
 			res.send('Invalid email address');
+		} else {
+			res.send('');
 		}
 	});
 
