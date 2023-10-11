@@ -8,7 +8,6 @@ export const register = ( app: express.Application ) => {
         res.render( "index" );
     } );
 
-    // define a secure route handler for the login page that redirects to /guitars
     app.post( "/login", ( _req, res ) => {
 		//TODO Login
         res.redirect( "/bags" );

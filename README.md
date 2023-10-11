@@ -16,6 +16,6 @@ This learning project is possible thanks to the following amazing online resourc
 * [Khalilstemmler tutorial](https://khalilstemmler.com/blogs/typescript/node-starter-project/)
 * [Monkeytype Git](https://github.com/monkeytypegame/monkeytype)
 * [ChatGPT](https://chat.openai.com/)
-
+* [Materialize](https://materializecss.com)
 
 

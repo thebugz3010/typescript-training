@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import { Response, Request, NextFunction, Handler } from "express";
 
+// Initialize Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyD-Sajtdo84HdNrwgm-9b_Y-futFyN-N6g",
   authDomain: "typescript-2ef4f.firebaseapp.com",
@@ -11,8 +12,6 @@ const firebaseConfig = {
   appId: "1:975527145939:web:ba7c9d20ca8c7774577f26",
   measurementId: "G-W03CWPBS5L"
 };
-
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
